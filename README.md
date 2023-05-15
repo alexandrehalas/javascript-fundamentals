@@ -40,3 +40,66 @@ let function = 38
 
 Throws error at console:
 caught SyntaxError: Unexpected token 'function'
+<br><br>
+
+## Data types <br><br>
+
+JavaScript has 8 Data types
+
+| Primitive | Object |
+| --------- | ------ |
+| String    |
+| Number    |
+| Bigint    |
+| Boolean   |
+| Undefined |
+| Null      |
+| Symbol    |
+|           | Object |
+
+### <br>Three most important Data types<br><br>
+
+Number: Floating point numbers, used for decimals and integers
+
+```
+Ex.: let age = 59;
+//variable age has 59.0 value
+```
+
+String: Sequence of characters, used for text
+
+```
+Ex.: let firstName = "Alexandre"
+```
+
+Boolean: Logical type that can only be 'true' or 'false', used for taking decisions
+
+```
+Ex.: let displayName = true;
+```
+
+### <br>Other primitive Data types<br><br>
+
+Undefined: Means the variable has been declared, but its value has not been assigned
+
+```
+Ex.: let dog;
+```
+
+Null: means an empty value or a blank value
+
+Symbol (ES2015): Value that is unique and cannot be changed
+
+BigInt(ES2020): Larger integers than the Number type can hold
+
+### <br>The Object Data type can contain:<br><br>
+
+1. An object
+2. An array
+3. A date
+
+## <br>Javascript has dynamic typing
+
+We do <b>not</b> have to manually define the data type of the value stored in a variable. Instead, data types are determined <b>automatically</b>.
+
+The value has a type, not the variable

@@ -8,6 +8,10 @@ assign their values according to your own country (population in millions)
 */
 
 console.log("");
+console.log("");
+console.log("ASSIGNMENTS");
+console.log("");
+
 console.log("LECTURE: Values and Variables");
 
 let country = "Brazil";
