@@ -10,8 +10,8 @@ assign their values according to your own country (population in millions)
 console.log("");
 console.log("");
 console.log("ASSIGNMENTS");
-console.log("");
 
+console.log("");
 console.log("LECTURE: Values and Variables");
 
 let country = "Brazil";
@@ -21,8 +21,34 @@ let population = 214300000;
 console.log(
   "      Country: " +
     country +
-    " Continent: " +
+    ", Continent: " +
     continent +
-    " Population: " +
+    ", Population: " +
     population
+);
+
+/*
+LECTURE: Data Types
+    1. Declare a variable called 'isIsland' and set its value according to your
+country. The variable should hold a Boolean value. Also declare a variable
+'language', but don't assign it any value yet
+    2. Log the types of 'isIsland', 'population', 'country' and 'language'
+to the console
+*/
+
+console.log("");
+console.log("LECTURE: Data Types");
+
+let isIsland = false;
+let language;
+
+console.log(
+  "      isIsland: " +
+    isIsland +
+    ", Population: " +
+    population +
+    ", Country: " +
+    country +
+    ", Language: " +
+    language
 );
