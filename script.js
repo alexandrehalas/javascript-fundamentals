@@ -27,6 +27,7 @@ console.log(farewell + " " + firstName + " " + LAST_NAME);
  * DATA TYPES
  */
 
+/*
 console.log("");
 console.log("DATA TYPES");
 console.log("");
@@ -55,3 +56,15 @@ console.log("year type is: " + typeof year);
 year = 1990;
 console.log("year value is: " + year);
 console.log("year type is: " + typeof year);
+*/
+
+/**
+ * const, var, let
+ */
+let age = 30;
+age = 31;
+
+const birthYear = 1990;
+birthYear = 1991;
+
+const dog;
