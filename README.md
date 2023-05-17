@@ -153,3 +153,48 @@ As a best practice for writing clean code it's recommended to use 'const' by def
 There is a thid way in Javascript of declaring variables, which is the 'var' keyword, but this one should be completely avoided.
 
 'var' is the old way to declare variables
+
+## <br>Basic Operators<br><br>
+
+An operator is a special symbol used to perform operations on operands (values and variables)
+
+There are different types of JavaScript operators:
+
+- ### Arithmetic Operators
+  - Used to perform arithmetic on numbers<br><br>
+  ```
+  let a = 3;
+  let x = (100 + 50) * a;
+  ```
+- ### Assignment Operators
+
+  - Assignment operators assign values to JavaScript variables<br><br>
+
+  ```
+  let x = 10;
+  x += 5;
+  ```
+
+  | Operator | Example   | Same As      |
+  | -------- | --------- | ------------ |
+  | =        | x = y     | x = y        |
+  | +=       | x += y    | x = x + y    |
+  | -=       | x -= y    | x = x - y    |
+  | \*=      | x \*= y   | x = x \* y   |
+  | /=       | x /= y    | x = x / y    |
+  | %=       | x %= y    | x = x % y    |
+  | \*\*=    | x \*\*= y | x = x \*\* y |
+
+- ### Comparison Operators
+
+  | Operator | Description                       |
+  | -------- | --------------------------------- |
+  | ==       | equal to                          |
+  | ===      | equal value and equal type        |
+  | !=       | not equal                         |
+  | !==      | not equal value or not equal type |
+  | >        | greater than                      |
+  | <        | less than                         |
+  | >=       | greater than or equal to          |
+  | <=       | less than or equal to             |
+  | ?        | ternary operator                  |

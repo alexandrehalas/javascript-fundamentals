@@ -61,6 +61,7 @@ console.log("year type is: " + typeof year);
 /**
  * const, var, let
  */
+/*
 let age = 30;
 age = 31;
 
@@ -68,3 +69,23 @@ const birthYear = 1990;
 birthYear = 1991;
 
 const dog;
+*/
+
+/**
+ * Basic Operators
+ */
+const now = 2023;
+const ageAlexandre = now - 1990;
+const ageBelinha = now - 2011;
+
+console.log("age Alexandre: " + ageAlexandre);
+console.log("age Belinha: " + ageBelinha);
+
+console.log(
+  "age Alexandre * 2: " + ageAlexandre * 2,
+  ", age Alexandre / 10: " + ageAlexandre / 10,
+  ", 2 pounds 3 (2*2*2): " + 2 ** 3
+);
+
+const isFullAge = ageAlexandre >= 33;
+console.log("isFullAge: " + isFullAge);
