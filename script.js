@@ -74,6 +74,7 @@ const dog;
 /**
  * Basic Operators
  */
+/*
 const now = 2023;
 const ageAlexandre = now - 1990;
 const ageBelinha = now - 2011;
@@ -89,3 +90,17 @@ console.log(
 
 const isFullAge = ageAlexandre >= 33;
 console.log("isFullAge: " + isFullAge);
+*/
+
+/**
+ * Operator Precedence
+ */
+const now = 2023;
+const ageAlexandre = now - 1990;
+const ageBelinha = now - 2011;
+
+const averageAge = (ageAlexandre - ageBelinha) / 2;
+// average = (33 - 12) / 2
+// average = (21) / 2
+// average = 10,5
+console.log("Average age is: " + averageAge);
