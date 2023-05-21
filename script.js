@@ -95,7 +95,7 @@ console.log("isFullAge: " + isFullAge);
 /**
  * Operator Precedence
  */
-const now = 2023;
+/*const now = 2023;
 const ageAlexandre = now - 1990;
 const ageBelinha = now - 2011;
 
@@ -104,3 +104,35 @@ const averageAge = (ageAlexandre - ageBelinha) / 2;
 // average = (21) / 2
 // average = 10,5
 console.log("Average age is: " + averageAge);
+*/
+
+/**
+ * Strings and Template literals
+ */
+const firstName = "Alexandre";
+const job = "programmer";
+const birthYear = 1990;
+const year = 2050;
+
+const alexandre =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+
+console.log(alexandre);
+
+const alexandreStringTemplate = `I'm ${firstName}, a ${
+  year - birthYear
+} years old ${job}!`;
+
+console.log(alexandreStringTemplate);
+
+console.log(`Just a regular string...`);
+
+console.log(
+  "String with \n\
+multiple\n\
+lines"
+);
+
+console.log(`String with
+multiple
+lines`);
