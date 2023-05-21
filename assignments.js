@@ -110,3 +110,11 @@ const description =
   " people speak " +
   language;
 console.log(description);
+
+/*
+LECTURE: Strings and Template Literals
+    1. Recreate the 'description' variable from the last assignment, this time
+using the template literal syntax
+*/
+const descriptionTemplateLiterals = `${country} is in ${continent}, and its ${population} people speak ${language}`;
+console.log(descriptionTemplateLiterals);
