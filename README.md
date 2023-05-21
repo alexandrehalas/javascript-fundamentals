@@ -217,3 +217,18 @@ Template literals are sometimes informally called template strings, because they
 
 tagFunction`string text ${expression} string text`
 ```
+
+## <br>Taking decisions: if / else Statements <br><br>
+
+The if...else statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional else clause will be executed.
+
+```
+const value = 1;
+let result;
+if (value > 0) {
+  result = "positive";
+} else {
+  result = "NOT positive";
+}
+return result;
+```
