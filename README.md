@@ -298,5 +298,4 @@ Ex.:
       } else {
         console.log("Height is UNDEFINED");
       }
-
 ```
