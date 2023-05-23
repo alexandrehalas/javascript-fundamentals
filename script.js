@@ -165,6 +165,7 @@ console.log(century);
  * Typing Conversion and Coercion
  */
 
+/*
 // CONVERSION
 
 const inputYear = "1990";
@@ -194,3 +195,36 @@ n -= 1;
 console.log(n); // result is 10
 
 console.log(2 + 3 + 4 + "5"); // result is 95
+*/
+
+/**
+ * Truthy and Falsy Values
+ */
+
+console.log("Falsy Values");
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+console.log("Truthy Values");
+console.log(Boolean("Alexandre"));
+console.log(Boolean(32));
+console.log(Boolean({}));
+
+const money = 0;
+
+if (money) {
+  console.log("Don't spend it all.");
+} else {
+  console.log("You should get a job!");
+}
+
+let height;
+
+if (height) {
+  console.log("YAY! height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}

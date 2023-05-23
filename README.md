@@ -249,3 +249,54 @@ Ex.:  let n = "1" + 1;
       n -= 1;
       console.log(n);
 ```
+
+## <br>Truthy and Falsy Values<br><br>
+
+Falsy values are values that are not exactly false, but will become false when we try to convert them into a boolean.
+
+And in Javascript, there are only five falsy values:
+
+- 0
+- ''
+- undefined
+- null
+- NaN
+
+```
+Ex.: console.log(Boolean(0));
+     console.log(Boolean(""));
+     console.log(Boolean(undefined));
+     console.log(Boolean(null));
+     console.log(Boolean(NaN));
+```
+
+Everything else are called Truthy values, so values that will be converted to true.
+
+```
+Ex.: console.log(Boolean("Alexandre"));
+     console.log(Boolean(32));
+     console.log(Boolean({}));
+```
+
+### <br>Javascript type coercion to booleans in two scenarious:
+
+- when using logical operators;
+- in a logical context, like in a condition of an if else statement.
+
+```
+Ex.:
+      const money = 0;
+      if (money) { // when 0 converts Boolean(0) => false
+        console.log("Don't spend it all.");
+      } else {
+        console.log("You should get a job!");
+      }
+
+      let height; // height is undefined at this point
+      if (height) { // when converts Boolean(undefined) => false
+        console.log("YAY! height is defined");
+      } else {
+        console.log("Height is UNDEFINED");
+      }
+
+```
