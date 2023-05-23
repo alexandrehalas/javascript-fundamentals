@@ -232,3 +232,20 @@ if (value > 0) {
 }
 return result;
 ```
+
+## <br>Typing Conversion and Coercion<br><br>
+
+Type conversion is when we manually convert from one type to another.
+
+```
+Ex.: const inputYear = "1990";
+     console.log(Number(inputYear), inputYear);
+```
+
+Type coercion is when Javascript automatically converts types behind the scenes for us.
+
+```
+Ex.:  let n = "1" + 1;
+      n -= 1;
+      console.log(n);
+```

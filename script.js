@@ -142,6 +142,7 @@ lines`);
 /**
  * Taking decisions: if / else Statements
  */
+/*
 const age = 16;
 if (age >= 18) {
   console.log("Sarah can start driving license");
@@ -158,3 +159,38 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+/*
+
+/**
+ * Typing Conversion and Coercion
+ */
+
+// CONVERSION
+
+const inputYear = "1990";
+console.log(inputYear + 18);
+
+const numberInputYear = Number(inputYear);
+console.log(numberInputYear + 18);
+
+//Displays at console NaN -> Not a Number
+console.log(Number("Alexandre"));
+
+console.log(String(32), 32);
+
+// COERCION
+// javascript convert 23 into string
+console.log("I am " + 23 + " years old");
+//javascript convert all strings into numbers
+console.log("32" - "10" - 2);
+//javascript convert 2 into string
+console.log("32" + "10" + 2);
+//javascript convert strings into numbers
+console.log("32" * 2);
+console.log("32" / 2);
+
+let n = "1" + 1;
+n -= 1;
+console.log(n); // result is 10
+
+console.log(2 + 3 + 4 + "5"); // result is 95
