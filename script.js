@@ -257,3 +257,24 @@ if (favouriteNumber !== 23) {
   console.log("Why not 23?");
 }
 */
+
+/**
+ * Logical Operators
+ */
+const hasDriverLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+console.log(!hasGoodVision);
+
+const shouldDrive = hasDriverLicense && hasGoodVision;
+
+const isTired = true;
+
+if (shouldDrive && !isTired) {
+  console.log("Sarah should drive!");
+} else {
+  console.log("Someone else should drive");
+}
