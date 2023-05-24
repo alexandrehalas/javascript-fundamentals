@@ -357,3 +357,23 @@ Ex.:
       console.log(0 === false);
       // Expected output: false
 ```
+
+## <br>Boolean logic<br><br>
+
+### A AND B
+
+| AND   | TRUE  | FALSE |
+| ----- | ----- | ----- |
+| TRUE  | TRUE  | FALSE |
+| FALSE | FALSE | FALSE |
+
+### <br>A OR B
+
+| OR    | TRUE | FALSE |
+| ----- | ---- | ----- |
+| TRUE  | TRUE | TRUE  |
+| FALSE | TRUE | FALSE |
+
+### <br>NOT A, NOT B
+
+Inverts TRUE / FALSE value
