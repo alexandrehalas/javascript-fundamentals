@@ -233,6 +233,7 @@ if (height) {
 /**
  * Equality operators: == vs. ===
  */
+/*
 const age = 18;
 console.log(`loose ${age == 18}`);
 console.log(`loose ${age == "18"}`);
@@ -255,3 +256,4 @@ if (favouriteNumber === 23) {
 if (favouriteNumber !== 23) {
   console.log("Why not 23?");
 }
+*/
