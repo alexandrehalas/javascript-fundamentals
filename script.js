@@ -200,7 +200,7 @@ console.log(2 + 3 + 4 + "5"); // result is 95
 /**
  * Truthy and Falsy Values
  */
-
+/*
 console.log("Falsy Values");
 console.log(Boolean(0));
 console.log(Boolean(""));
@@ -227,4 +227,31 @@ if (height) {
   console.log("YAY! height is defined");
 } else {
   console.log("Height is UNDEFINED");
+}
+*/
+
+/**
+ * Equality operators: == vs. ===
+ */
+const age = 18;
+console.log(`loose ${age == 18}`);
+console.log(`loose ${age == "18"}`);
+console.log(`strict ${age === 18}`);
+//strict operator not performe type coercion
+console.log(`strict ${age === "18"}`);
+
+const favouriteNumber = Number(prompt("What´s your favorite number?"));
+console.log(favouriteNumber);
+console.log(typeof favouriteNumber);
+
+if (favouriteNumber === 23) {
+  console.log("Cool! 23 is an amazing number");
+} else if (favouriteNumber === 7) {
+  console.log("7 is also a cool number");
+} else {
+  console.log("Number is not 23 or 7");
+}
+
+if (favouriteNumber !== 23) {
+  console.log("Why not 23?");
 }

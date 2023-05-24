@@ -299,3 +299,61 @@ Ex.:
         console.log("Height is UNDEFINED");
       }
 ```
+
+## <br>Equality operators: == vs. ===<br><br>
+
+The equality (==) operator checks whether its two operands are equal, returning a Boolean result.
+Unlike the strict equality (===) operator, it attempts to convert and compare operands that are of different types.
+
+```
+Ex.:
+      console.log(1 == 1);
+      // Expected output: true
+
+      console.log('hello' == 'hello');
+      // Expected output: true
+
+      console.log('1' ==  1);
+      // Expected output: true
+
+      console.log(0 == false);
+      // Expected output: true
+```
+
+Loose equality is one such context: null == A and undefined == A evaluate to true if, and only if, A is an object that emulates undefined. In all other cases an object is never loosely equal to undefined or null.
+
+Loose equality operator is full of really weird rules and behaviors, this means if we use this one, this can introduce many hard to find bugs into our code. So as a general rule for clean code, avoid this operator as much you can.
+
+In most cases, using loose equality is discouraged.
+
+```
+const num = 0;
+const big = 0n;
+const str = "0";
+const obj = new String("0");
+
+console.log(num == str); // true
+console.log(big == num); // true
+console.log(str == big); // true
+
+console.log(num == obj); // true
+console.log(big == obj); // true
+console.log(str == obj); // true
+```
+
+The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
+
+```
+Ex.:
+      console.log(1 === 1);
+      // Expected output: true
+
+      console.log('hello' === 'hello');
+      // Expected output: true
+
+      console.log('1' ===  1);
+      // Expected output: false
+
+      console.log(0 === false);
+      // Expected output: false
+```
