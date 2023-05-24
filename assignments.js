@@ -14,9 +14,12 @@ console.log("ASSIGNMENTS");
 console.log("");
 console.log("LECTURE: Values and Variables");
 
-const country = "Brazil";
-const continent = "South America";
-let population = 214300000;
+//const country = "Brazil";
+const country = "Portugal";
+//const continent = "South America";
+const continent = "Europe";
+//let population = 214300000;
+let population = 10330000;
 
 console.log(
   "      Country: " +
@@ -40,7 +43,8 @@ console.log("");
 console.log("LECTURE: Data Types");
 
 const isIsland = false;
-const language = "portuguese";
+//const language = "portuguese";
+const language = "english";
 
 console.log(
   "      isIsland: " +
@@ -184,9 +188,14 @@ when you input 1
 situation
 */
 
-const numNeighbours = Number(
+console.log("");
+console.log("LECTURE: Equality Operators: == vs. ===");
+
+const numNeighbours = 1;
+
+/*Number(
   prompt("How many neighbour countries does your country have?")
-);
+);*/
 
 if (numNeighbours === 1) {
   console.log("Only 1 border!");
@@ -194,4 +203,32 @@ if (numNeighbours === 1) {
   console.log("More than 1 border");
 } else {
   console.log("No borders");
+}
+
+/*
+LECTURE: Logical Operators
+1. Comment out the previous code so the prompt doesn't get in the way
+2. Let's say Sarah is looking for a new country to live in. She wants to live in a
+country that speaks english, has less than 50 million people and is not an
+island.
+3. Write an if statement to help Sarah figure out if your country is right for her.
+You will need to write a condition that accounts for all of Sarah's criteria. Take
+your time with this, and check part of the solution if necessary.
+4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If
+not, log 'Portugal does not meet your criteria :('
+5. Probably your country does not meet all the criteria. So go back and temporarily
+change some variables in order to make the condition true (unless you live in
+Canada :D)
+*/
+
+console.log("");
+console.log("LECTURE: Logical Operators");
+
+const speaksEnglish = language === "english";
+const lessThan50MillionPeople = population < 50000000;
+
+if (speaksEnglish && lessThan50MillionPeople && !isIsland) {
+  console.log("You should live in Portugal :)");
+} else {
+  console.log("Portugal does not meet your criteria :(");
 }
