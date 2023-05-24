@@ -261,6 +261,7 @@ if (favouriteNumber !== 23) {
 /**
  * Logical Operators
  */
+/*
 const hasDriverLicense = true;
 const hasGoodVision = false;
 
@@ -277,4 +278,31 @@ if (shouldDrive && !isTired) {
   console.log("Sarah should drive!");
 } else {
   console.log("Someone else should drive");
+}
+*/
+
+/**
+ * The switch statement
+ */
+const day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("Plan my course");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Preparing theory videos");
+    break;
+  case "wednesday":
+  case "thurdays":
+    console.log("Write code examples");
+  case "friday":
+    console.log("Record videos");
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend 🙂");
+    break;
+  default:
+    console.log("Not a valid day");
 }
