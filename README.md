@@ -378,7 +378,7 @@ Ex.:
 
 Inverts TRUE / FALSE value
 
-## <br> The switch statement<br><br>
+## <br>The switch statement<br><br>
 
 The switch statement evaluates an expression, matching the expression's value against a series of case clauses, and executes statements after the first case clause with a matching value, until a break statement is encountered. The default clause of a switch statement will be jumped to if no case matches the expression's value.
 
@@ -397,3 +397,29 @@ switch (expr) {
     console.log(`Sorry, we are out of ${expr}.`);
 }
 ```
+
+## <br>Statements and Expressions<br><br>
+
+At a high level, an expression is a valid unit of code that resolves to a value. There are two types of expressions: those that have side effects (such as assigning values) and those that purely evaluate.
+
+The expression x = 7 is an example of the first type. This expression uses the = operator to assign the value seven to the variable x. The expression itself evaluates to 7.
+
+```
+Ex.:  3 + 4
+      1990
+      true && false && !false
+```
+
+Statements is like a big piece of code that is executed and which not produce a value on itself
+
+```
+Ex.:  if (23 > 10) {
+        const str = "23 is bigger";
+      }
+```
+
+### Resume
+
+Expressions produces values
+
+Statements are like full sentences that translate our actions.
