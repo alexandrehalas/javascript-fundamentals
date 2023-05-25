@@ -423,3 +423,22 @@ Ex.:  if (23 > 10) {
 Expressions produces values
 
 Statements are like full sentences that translate our actions.
+
+## <br>The conditional (Ternary) Operator<br><br>
+
+The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark ( ? ), then an expression to execute if the condition is truthy followed by a colon ( : ), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.
+
+```
+Ex.:
+      let isMember = true;
+      return (isMember ? '$2.00' : '$10.00');
+      // Expected output: "$2.00"
+
+      let isMember = false;
+      return (isMember ? '$2.00' : '$10.00');
+      // Expected output: "$10.00"
+
+      let isMember = null;
+      return (isMember ? '$2.00' : '$10.00');
+      // Expected output: "$10.00"
+```
