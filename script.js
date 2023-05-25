@@ -284,6 +284,7 @@ if (shouldDrive && !isTired) {
 /**
  * The switch statement
  */
+/*
 const day = "monday";
 
 switch (day) {
@@ -306,3 +307,4 @@ switch (day) {
   default:
     console.log("Not a valid day");
 }
+*/
