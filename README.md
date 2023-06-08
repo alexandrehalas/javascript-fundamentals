@@ -464,3 +464,27 @@ to activate strict mode:
 With strict mode, developers can write more secure code, make it easier for developers to avoid accidental errors.
 
 It helps to developers not to introduce bugs into the code.
+
+## Functions
+
+Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
+
+Functions allow us to write more maintainable code, because with functions, we can create reusable chunks of code instead of having to manually write the same code all the time.
+
+And when we know that we understand a very important principle for writing a clean code that is used in programming all the time, and this principle is called don't repeat yourself or 'dry'
+
+### <br>Function declarations<br><br>
+
+A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+
+- The name of the function.
+- A list of parameters to the function, enclosed in parentheses and separated by commas.
+- The JavaScript statements that define the function, enclosed in curly brackets, { /_ … _/ }.
+
+For example, the following code defines a simple function named square:
+
+```
+function square(number) {
+  return number * number;
+}
+```
