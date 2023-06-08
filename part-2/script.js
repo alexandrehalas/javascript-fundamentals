@@ -57,7 +57,7 @@ console.log(calcAgeConst(1990));
 /**
  * Arrow Function
  */
-
+/*
 // function expression
 const calcAgeConst = function (birthYear) {
   return new Date().getFullYear() - birthYear;
@@ -73,3 +73,21 @@ const yearsUntilRetirement = (birthYear, firstName) => {
   return `${firstName} retires in ${retirement} years`;
 };
 console.log(yearsUntilRetirement(1990, "Alexandre"));
+*/
+/**
+ * Functions calling other functions
+ */
+
+function cutFruitPieces(quantityOfFruits) {
+  return quantityOfFruits * 4;
+}
+
+function fruitProcessor(fruit, quantity) {
+  console.log(`Received ${quantity} ${fruit}s`);
+  const fruitPieces = cutFruitPieces(quantity);
+  console.log(`Cutted ${fruit}s into ${fruitPieces} pieces`);
+  console.log("Processing juice");
+  return `The ${fruit} juice is ready`;
+}
+
+console.log(fruitProcessor("apple", "3"));
