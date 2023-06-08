@@ -27,7 +27,7 @@ console.log(juice);
 /*
  * Function Declarations vs. Expressions
  */
-
+/*
 // function declaration
 
 console.log(calcAge(1986)); // <- can call this function first be declared
@@ -52,3 +52,24 @@ const calcAgeConst = function (birthYear) {
 console.log(calcAgeConst(1990));
 
 //big difference between function declaration and function expression is we can call function declarations before they are defined in the code.
+*/
+
+/**
+ * Arrow Function
+ */
+
+// function expression
+const calcAgeConst = function (birthYear) {
+  return new Date().getFullYear() - birthYear;
+};
+
+// arrow function
+const calcAgeArrow = (birthYear) => new Date().getFullYear() - birthYear;
+console.log(calcAgeArrow(1990));
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = new Date().getFullYear() - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years`;
+};
+console.log(yearsUntilRetirement(1990, "Alexandre"));
