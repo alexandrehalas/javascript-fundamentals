@@ -60,10 +60,24 @@ const finlandPercentageOfWorld2 = percentageOfWorld2(6000000);
 const brazilPercentageOfWorld2 = percentageOfWorld2(214000000);
 const chinaPercentageOfWorld2 = percentageOfWorld2(1441000000);
 
+/*
+LECTURE: Arrow Functions
+  1. Recreate the last assignment, but this time create an arrow function called
+'percentageOfWorld3'
+*/
+
+const percentageOfWorld3 = (population) => (population / 7900000000) * 100;
+
+const finlandPercentageOfWorld3 = percentageOfWorld3(6000000);
+const brazilPercentageOfWorld3 = percentageOfWorld3(214000000);
+const chinaPercentageOfWorld3 = percentageOfWorld3(1441000000);
+
 console.log(
-  `Finland %: ${finlandPercentageOfWorld1} ${finlandPercentageOfWorld2}`
+  `Finland %: ${finlandPercentageOfWorld1} ${finlandPercentageOfWorld2} ${finlandPercentageOfWorld3}`
 );
 console.log(
-  `Brazil %: ${brazilPercentageOfWorld1} ${brazilPercentageOfWorld2}`
+  `Brazil %: ${brazilPercentageOfWorld1} ${brazilPercentageOfWorld2} ${brazilPercentageOfWorld3}`
 );
-console.log(`China %: ${chinaPercentageOfWorld1} ${chinaPercentageOfWorld2}`);
+console.log(
+  `China %: ${chinaPercentageOfWorld1} ${chinaPercentageOfWorld2} ${chinaPercentageOfWorld3}`
+);
