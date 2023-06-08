@@ -488,3 +488,32 @@ function square(number) {
   return number * number;
 }
 ```
+
+## Function Declarations vs. Expressions
+
+```
+// Function Declaration
+
+console.log(calcAge(1986)); // <- can call this function first be declared
+
+function calcAge(birthYear) {
+  return new Date().getFullYear() - birthYear;
+}
+
+console.log(calcAge(1990));
+```
+
+```
+// Function Expression
+
+//function without name was called an anonymous function
+//so this anonymous function is an expression, because a expression produces a value
+
+const calcAgeConst = function (birthYear) {
+  return new Date().getFullYear() - birthYear;
+};
+
+console.log(calcAgeConst(1990));
+```
+
+The big difference between function declaration and function expression is we can call function declarations before they are defined in the code.
