@@ -77,7 +77,7 @@ console.log(yearsUntilRetirement(1990, "Alexandre"));
 /**
  * Functions calling other functions
  */
-
+/*
 function cutFruitPieces(quantityOfFruits) {
   return quantityOfFruits * 4;
 }
@@ -91,3 +91,29 @@ function fruitProcessor(fruit, quantity) {
 }
 
 console.log(fruitProcessor("apple", "3"));
+*/
+/**
+ * Introduction to Arrays
+ */
+const friend1 = "Betinha";
+const friend2 = "Gabriel";
+
+// creating arrays
+// literal syntax
+const friends = ["Betinha", "Gabriel"];
+console.log(friends);
+
+const years = new Array(1990, 1986, 2010);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[1] = "Bibi";
+console.log(friends);
+
+const firstName = "Alexandre";
+const alexandre = [firstName, "Halas", 1990, "Developer", friends];
+console.log(alexandre);
