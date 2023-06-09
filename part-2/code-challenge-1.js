@@ -27,7 +27,7 @@ GOOD LUCK :)
 */
 
 console.log("");
-console.log("JavaScript Fundamentals – Part 1");
+console.log("JavaScript Fundamentals – Part 2");
 console.log("Coding Challenge #1");
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
