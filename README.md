@@ -489,7 +489,7 @@ function square(number) {
 }
 ```
 
-## Function Declarations vs. Expressions
+## <br>Function Declarations vs. Expressions
 
 ```
 // Function Declaration
@@ -518,7 +518,7 @@ console.log(calcAgeConst(1990));
 
 The big difference between function declaration and function expression is we can call function declarations before they are defined in the code.
 
-## Arrow Functions
+## <br>Arrow Functions
 
 An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
 
@@ -538,7 +538,7 @@ console.log(materials.map(material => material.length));
 // Expected output: Array [8, 6, 7, 9]
 ```
 
-## Introduction to Arrays
+## <br>Introduction to Arrays
 
 The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.
 
@@ -550,3 +550,110 @@ In JavaScript, arrays aren't primitives but are instead Array objects with the f
 - JavaScript arrays are not associative arrays and so, array elements cannot be accessed using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective string form) as indexes.
 - JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on — and the last element is at the value of the array's length property minus 1.
 - JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies).
+
+## <br>Basic Arrays Operations
+
+### <br>Push<br><br>
+
+The push() method adds the specified elements to the end of an array and returns the new length of the array.
+
+```
+const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count);
+// Expected output: 4
+console.log(animals);
+// Expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals);
+// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+```
+
+### <br>Unshift<br><br>
+
+The unshift() method adds the specified elements to the beginning of an array and returns the new length of the array.
+
+```
+const array1 = [1, 2, 3];
+
+console.log(array1.unshift(4, 5));
+// Expected output: 5
+
+console.log(array1);
+// Expected output: Array [4, 5, 1, 2, 3]
+```
+
+### <br>Pop<br><br>
+
+The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+
+```
+const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+
+console.log(plants.pop());
+// Expected output: "tomato"
+
+console.log(plants);
+// Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+
+plants.pop();
+
+console.log(plants);
+// Expected output: Array ["broccoli", "cauliflower", "cabbage"]
+```
+
+### <br>Shift<br><br>
+
+The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
+
+```
+const array1 = [1, 2, 3];
+
+const firstElement = array1.shift();
+
+console.log(array1);
+// Expected output: Array [2, 3]
+
+console.log(firstElement);
+// Expected output: 1
+
+```
+
+### <br>Indexof<br><br>
+
+The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+```
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// Expected output: 1
+
+// Start from index 2
+console.log(beasts.indexOf('bison', 2));
+// Expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// Expected output: -1
+```
+
+### <br>Includes<br><br>
+
+The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+
+```
+const array1 = [1, 2, 3];
+
+console.log(array1.includes(2));
+// Expected output: true
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// Expected output: true
+
+console.log(pets.includes('at'));
+// Expected output: false
+```

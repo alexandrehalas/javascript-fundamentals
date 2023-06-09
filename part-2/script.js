@@ -95,6 +95,7 @@ console.log(fruitProcessor("apple", "3"));
 /**
  * Introduction to Arrays
  */
+/*
 const friend1 = "Betinha";
 const friend2 = "Gabriel";
 
@@ -117,3 +118,32 @@ console.log(friends);
 const firstName = "Alexandre";
 const alexandre = [firstName, "Halas", 1990, "Developer", friends];
 console.log(alexandre);
+*/
+
+const friends = ["Betinha", "Gabriel", "Bibi"];
+
+// Add elements
+const newLength = friends.push("Fonfon");
+
+console.log(newLength);
+console.log(friends);
+
+friends.unshift("Jojo");
+console.log(friends);
+
+//remove elements
+
+friends.pop();
+const removedFriend = friends.pop();
+console.log(removedFriend);
+console.log(friends);
+
+const shiftedFriend = friends.shift();
+console.log(shiftedFriend);
+console.log(friends);
+
+console.log(friends.indexOf("Betinha"));
+console.log(friends.indexOf("Giulia"));
+
+console.log(friends.includes("Betinha"));
+console.log(friends.includes("Giulia"));
