@@ -190,3 +190,34 @@ if (!neighbours.includes("Germany")) {
 const guyanaIndex = neighbours.indexOf("Guyana");
 neighbours[guyanaIndex] = "Republic of Guyana";
 console.log(neighbours);
+
+/*
+LECTURE: Introduction to Objects
+  1. Create an object called 'myCountry' for a country of your choice, containing
+properties 'country', 'capital', 'language', 'population' and
+'neighbours' (an array like we used in previous assignments)
+*/
+
+console.log("");
+console.log("LECTURE: Introduction to Objects");
+
+const myCountry = {
+  country: "Brazil",
+  capital: "Brasilia",
+  language: "Portuguese",
+  population: 214000000,
+  neighbours: [
+    "Uruguay",
+    "Argentina",
+    "Paraguay",
+    "Bolivia",
+    "Peru",
+    "Columbia",
+    "Venezuela",
+    "Guyana",
+    "Suriname",
+    "French Guiana",
+  ],
+};
+
+console.log(myCountry);
