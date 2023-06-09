@@ -120,6 +120,10 @@ const alexandre = [firstName, "Halas", 1990, "Developer", friends];
 console.log(alexandre);
 */
 
+/**
+ * Basic Array Operations (Methods)
+ */
+/*
 const friends = ["Betinha", "Gabriel", "Bibi"];
 
 // Add elements
@@ -147,3 +151,24 @@ console.log(friends.indexOf("Giulia"));
 
 console.log(friends.includes("Betinha"));
 console.log(friends.includes("Giulia"));
+*/
+
+/**
+ * Introduction to Objects
+ */
+
+// Array
+const firstName = "Alexandre";
+const friends = ["Betinha", "Gabriel", "Bibi"];
+const alexandreArray = [firstName, "Halas", 1990, "Developer", friends];
+console.log(alexandreArray);
+
+// Object
+const alexandre = {
+  firstName: firstName,
+  lastName: "Halas",
+  birthYear: 1990,
+  job: "Developer",
+  friends,
+};
+console.log(alexandre);

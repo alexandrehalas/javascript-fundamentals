@@ -657,3 +657,18 @@ console.log(pets.includes('cat'));
 console.log(pets.includes('at'));
 // Expected output: false
 ```
+
+## <br>Introduction to Objects
+
+The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.
+
+```
+const alexandre = {
+  firstName: firstName,
+  lastName: "Halas",
+  birthYear: 1990,
+  job: "Developer",
+  friends,
+};
+console.log(alexandre);
+```
