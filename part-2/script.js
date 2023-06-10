@@ -171,4 +171,24 @@ const alexandre = {
   job: "Developer",
   friends,
 };
+
+/**
+ * Dot vs. Bracket Notation
+ */
+
 console.log(alexandre);
+
+// dot notation
+// in dot notation we have to use the real final property name
+console.log(alexandre.lastName);
+//that is not allowed in dor notation
+//const nameKey = "Name";
+//console.log(alexandre.'last' + nameKey);
+
+// brackets notation
+// in bracket notation we can put any expression we'd like
+console.log(alexandre["lastName"]);
+
+const nameKey = "Name";
+console.log(alexandre["first" + nameKey]);
+console.log(alexandre["last" + nameKey]);

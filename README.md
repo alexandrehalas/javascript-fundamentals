@@ -672,3 +672,32 @@ const alexandre = {
 };
 console.log(alexandre);
 ```
+
+## <br> Dot vs. Bracket Notation
+
+### <br>Dot notation<br><br>
+
+In dot notation we have to use the real final property name
+
+```
+console.log(alexandre.lastName);
+```
+
+That is not allowed in dor notation
+
+```
+const nameKey = "Name";
+console.log(alexandre.'last' + nameKey);
+```
+
+### <br>Brackets notation<br><br>
+
+in bracket notation we can put any expression we'd like
+
+```
+console.log(alexandre["lastName"]);
+
+const nameKey = "Name";
+console.log(alexandre["first" + nameKey]);
+console.log(alexandre["last" + nameKey]);
+```
