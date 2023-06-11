@@ -729,3 +729,40 @@ The statements for loops provided in JavaScript are:
 - continue statement
 - for...in statement
 - for...of statement
+
+### <br>break statement<br><br>
+
+Use the break statement to terminate a loop, switch, or in conjunction with a labeled statement.
+
+- When you use break without a label, it terminates the innermost enclosing while, do-while, for, or switch immediately and transfers control to the following statement.
+- When you use break with a label, it terminates the specified labeled statement.
+
+```
+for (let i = 0; i < a.length; i++) {
+  if (a[i] === theValue) {
+    break;
+  }
+}
+```
+
+### <br>continue statement<br><br>
+
+The continue statement can be used to restart a while, do-while, for, or label statement.
+
+- When you use continue without a label, it terminates the current iteration of the innermost enclosing while, do-while, or for statement and continues execution of the loop with the next iteration. In contrast to the break statement, continue does not terminate the execution of the loop entirely. In a while loop, it jumps back to the condition. In a for loop, it jumps to the increment-expression.
+
+- When you use continue with a label, it applies to the looping statement identified with that label.
+
+```
+let i = 0;
+let n = 0;
+while (i < 5) {
+  i++;
+  if (i === 3) {
+    continue;
+  }
+  n += i;
+  console.log(n);
+}
+//1,3,7,12
+```

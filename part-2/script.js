@@ -243,6 +243,7 @@ console.log(alexandre.getSummary());
 /**
  * Iteration: The for loop
  */
+/*
 console.log("Lifting weigths repetition 1 🏋️");
 console.log("Lifting weigths repetition 2 🏋️");
 console.log("Lifting weigths repetition 3 🏋️");
@@ -251,4 +252,39 @@ console.log("Lifting weigths repetition 5 🏋️");
 
 for (let i = 1; i <= 10; i++) {
   console.log(`Lifting weigths repetition ${i} 🏋️`);
+}
+*/
+
+/**
+ * Looping Arrays, Breaking and Continuing
+ */
+
+// Array
+const firstName = "Alexandre";
+const friends = ["Betinha", "Gabriel", "Bibi"];
+const alexandreArray = [firstName, "Halas", 1990, "Developer", friends];
+console.log(alexandreArray);
+
+const types = [];
+
+for (let i = 0; i < alexandreArray.length; i++) {
+  console.log(alexandreArray[i], typeof alexandreArray[i]);
+
+  // types[i] = typeof alexandreArray[i];
+  types.push(typeof alexandreArray[i]);
+}
+console.log(types);
+
+console.log("---- ONLY STRINGS ----");
+
+for (let i = 0; i < alexandreArray.length; i++) {
+  if (typeof alexandreArray[i] !== "string") continue;
+  console.log(alexandreArray[i], typeof alexandreArray[i]);
+}
+
+console.log("---- BREAK WITH NUMBER ----");
+
+for (let i = 0; i < alexandreArray.length; i++) {
+  if (typeof alexandreArray[i] === "number") break;
+  console.log(alexandreArray[i], typeof alexandreArray[i]);
 }
