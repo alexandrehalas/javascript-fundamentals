@@ -156,7 +156,7 @@ console.log(friends.includes("Giulia"));
 /**
  * Introduction to Objects
  */
-
+/*
 // Array
 const firstName = "Alexandre";
 const friends = ["Betinha", "Gabriel", "Bibi"];
@@ -171,11 +171,11 @@ const alexandre = {
   job: "Developer",
   friends,
 };
-
+*/
 /**
  * Dot vs. Bracket Notation
  */
-
+/*
 console.log(alexandre);
 
 // dot notation
@@ -192,3 +192,48 @@ console.log(alexandre["lastName"]);
 const nameKey = "Name";
 console.log(alexandre["first" + nameKey]);
 console.log(alexandre["last" + nameKey]);
+*/
+/**
+ * Object methods
+ */
+const firstName = "Alexandre";
+const friends = ["Betinha", "Gabriel", "Bibi"];
+const alexandreArray = [firstName, "Halas", 1990, "Developer", friends];
+console.log(alexandreArray);
+
+// Object
+const alexandre = {
+  firstName: firstName,
+  lastName: "Halas",
+  birthYear: 1990,
+  job: "Developer",
+  friends,
+  hasDriverLicense: true,
+  // calcAge: function (birthYear) {
+  //   return new Date().getFullYear() - birthYear;
+  // },
+  // calcAge: function () {
+  //   return new Date().getFullYear() - this.birthYear;
+  // },
+  calcAge: function () {
+    //creating new property age inside alexandre's object, so now we didn't need calculate the age all the time we want get its value
+    this.age = new Date().getFullYear() - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} old ${
+      this.job
+    }, and he has ${this.hasDriverLicense ? "a" : "no"} drivers license`;
+  },
+};
+
+// console.log(alexandre.calcAge(1990));
+// console.log(alexandre["calcAge"](1990));
+
+console.log("calculate alexandre's age: " + alexandre.calcAge());
+
+console.log("retrieving alexandre's age: " + alexandre.age);
+console.log("retrieving alexandre's age: " + alexandre.age);
+console.log("retrieving alexandre's age: " + alexandre.age);
+
+console.log(alexandre.getSummary());
