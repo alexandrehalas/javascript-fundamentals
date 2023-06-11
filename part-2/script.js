@@ -258,7 +258,7 @@ for (let i = 1; i <= 10; i++) {
 /**
  * Looping Arrays, Breaking and Continuing
  */
-
+/*
 // Array
 const firstName = "Alexandre";
 const friends = ["Betinha", "Gabriel", "Bibi"];
@@ -287,4 +287,26 @@ console.log("---- BREAK WITH NUMBER ----");
 for (let i = 0; i < alexandreArray.length; i++) {
   if (typeof alexandreArray[i] === "number") break;
   console.log(alexandreArray[i], typeof alexandreArray[i]);
+}
+*/
+/**
+ * Looping Backwards and Loops in Loops
+ */
+
+// Array
+const firstName = "Alexandre";
+const friends = ["Betinha", "Gabriel", "Bibi"];
+const alexandreArray = [firstName, "Halas", 1990, "Developer", friends];
+console.log(alexandreArray);
+
+for (let i = alexandreArray.length - 1; i >= 0; i--) {
+  console.log(i, alexandreArray[i]);
+}
+
+for (let i = 1; i < 4; i++) {
+  console.log(`Starting Exercise ${i}`);
+
+  for (let j = 1; j < 6; j++) {
+    console.log(`   Lifting weight repetition ${j} 🏋️`);
+  }
 }
