@@ -196,6 +196,7 @@ console.log(alexandre["last" + nameKey]);
 /**
  * Object methods
  */
+/*
 const firstName = "Alexandre";
 const friends = ["Betinha", "Gabriel", "Bibi"];
 const alexandreArray = [firstName, "Halas", 1990, "Developer", friends];
@@ -237,3 +238,17 @@ console.log("retrieving alexandre's age: " + alexandre.age);
 console.log("retrieving alexandre's age: " + alexandre.age);
 
 console.log(alexandre.getSummary());
+*/
+
+/**
+ * Iteration: The for loop
+ */
+console.log("Lifting weigths repetition 1 🏋️");
+console.log("Lifting weigths repetition 2 🏋️");
+console.log("Lifting weigths repetition 3 🏋️");
+console.log("Lifting weigths repetition 4 🏋️");
+console.log("Lifting weigths repetition 5 🏋️");
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`Lifting weigths repetition ${i} 🏋️`);
+}
